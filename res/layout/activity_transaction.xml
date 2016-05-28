@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txtVoucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voucher_name"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerVoucher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:popupBackground="@color/BurlyWood" />
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+             ></LinearLayout>
+        <CheckBox 
+            android:id="@+id/CheckBoxInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Interest"
+            android:visibility="gone"
+            />
+        
+        
+        <TextView
+            android:id="@+id/txtvoucherDatename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/voucher_date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtvoucherDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:background="@drawable/back"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txtAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@string/Ac_name"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/txtchoosAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Ac"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/back"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <!--  <AutoCompleteTextView
+            android:id="@+id/autoAcchoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:visibility="gone"
+            android:text="" >
+
+            <requestFocus />
+        </AutoCompleteTextView> -->
+
+        <Button
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:onClick="Additem"
+            android:text="Add"
+            android:background="@drawable/btn_selecter"
+            android:src="@android:drawable/ic_menu_add" />
+        <Button
+            android:id="@+id/imViewdelete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Delete"
+            android:onClick="Deleteitem"
+            android:background="@drawable/btn_selecter"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selecter"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="26.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/Item" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="17.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/Qty" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="18.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/Unit" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="18.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/Price" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="20.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/Amount" />
+        
+</LinearLayout>
+<LinearLayout
+        android:id="@+id/linearAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selecter"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="14.0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/CRDR" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="27.0"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center"
+            android:text="@string/Ac" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="15.0"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center"
+            android:text="@string/Debit" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="15.0"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center"
+            android:text="@string/Credit" />
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="26.0"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center"
+            android:text="@string/Narration" />
+        
+</LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollViewField"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.31" >
+
+        <LinearLayout
+            android:id="@+id/scRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnTranactionSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        android:onClick="onsave"
+        style="@style/btnStyleShakespeare"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/submit" />
+
+</LinearLayout>

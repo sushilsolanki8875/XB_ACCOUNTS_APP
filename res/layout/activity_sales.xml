@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollviewsales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           
+             >
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.35"
+           android:orientation="horizontal"
+           android:layout_margin="10dp"
+           android:background="@drawable/shape" > 
+           <TextView
+          android:id="@+id/textgoods"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Goods Entry"
+          android:textSize="23sp"
+          android:gravity="center" />
+            
+            
+             </LinearLayout>
+            
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5" >      
+         <TextView
+          android:id="@+id/textaccountsales"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Account :"
+          android:layout_marginLeft="30dp"
+          android:gravity="left" />
+      <Button
+         android:id="@+id/btnAcccountGoodsshow"
+         android:layout_width="0dp"
+          android:layout_weight="1.77"
+         android:layout_height="40dp"
+         android:layout_marginRight="30dp"
+         android:text="None"
+            />
+         <!-- <Spinner
+             android:id="@+id/spinneraccountsales"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="30dp"
+             android:layout_weight="1.80" /> -->
+         
+      </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.42"
+           android:orientation="horizontal" >
+
+           <TextView
+               android:id="@+id/texttypesales"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+              
+               android:text="Type :"
+               android:layout_marginLeft="30dp"
+              android:gravity="left" />
+
+           <Spinner
+               android:id="@+id/spinnertypesales"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.80"
+                android:layout_marginRight="30dp" />
+       </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+          android:id="@+id/textcashsales"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="30dp"
+          android:gravity="left"
+          android:text="Cash"
+           />
+      <EditText
+        android:id="@+id/editcashsales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+       android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:ems="10"
+       
+         >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+          android:id="@+id/texttransfersales"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Transfer"
+          android:layout_marginLeft="30dp"
+          android:gravity="left" />
+      <EditText
+        android:id="@+id/editransfersales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+          android:id="@+id/textquantity"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Quantity"
+          android:layout_marginLeft="30dp"
+          android:gravity="left" />
+      <EditText
+        android:id="@+id/editquantitysales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+          android:id="@+id/textproduct"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Particullar"
+          android:layout_marginLeft="30dp"
+          android:gravity="left" />
+      <EditText
+        android:id="@+id/editParticullarsales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+          android:id="@+id/texttotalAmount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Amount Total"
+          android:layout_marginLeft="30dp"
+          android:gravity="left" />
+      <EditText
+        android:id="@+id/edittotalAmountsales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:cursorVisible="false" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:gravity="center" >
+
+       <Button
+           android:id="@+id/btnupadte"
+           android:layout_width="0dp"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:text="Upadte Values"
+           />
+       
+       <Button
+           android:id="@+id/btnshowRemaining"
+           android:layout_width="0dp"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:onClick="Remaining"
+           android:text="Show Remaining"
+           />
+       
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

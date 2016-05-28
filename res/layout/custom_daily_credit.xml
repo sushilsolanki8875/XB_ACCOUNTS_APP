@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+             >
+
+      <!--  <ImageView
+           android:id="@+id/imageEntryDaily"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="2"
+           android:background="@drawable/back"
+           android:src="@android:drawable/ic_input_add" /> -->
+           <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="wrap_content"
+                android:text="@string/Date" />
+
+            <TextView
+                android:id="@+id/txttodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text=""
+                android:background="@drawable/back"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+             <LinearLayout 
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1.0"></LinearLayout>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btnStyleShakespeare"
+                android:textSize="@dimen/text_size_normal"
+                android:text="Go" />
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+           android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            >
+            
+             <TextView
+                    android:id="@+id/txtcredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                   android:layout_weight="1" />
+                
+             
+            <TextView
+            android:id="@+id/txtTotalcash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:typeface="monospace"
+            android:text="" /> 
+             
+          
+        </LinearLayout>
+
+        
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_selecter"
+            android:orientation="horizontal"
+             >
+
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Date"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txtparticular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parti"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txtAccountcredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ac"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txtcash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cash"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txttranfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Tranfer"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Total"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+             
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.0"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/listViewcredit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+             
+            </ListView>
+            
+        </LinearLayout>
+        
+     <!-- <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">  
+
+         <LinearLayout 
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"></LinearLayout>
+         
+         
+        <TextView
+            android:id="@+id/txtCreditgrandTotalcash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_marginRight="2dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/txtCreditgrandTotalTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_marginRight="2dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/txtCreditgrandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_marginRight="2dp"
+            android:text="" />
+        </LinearLayout>  -->
+</LinearLayout>
+

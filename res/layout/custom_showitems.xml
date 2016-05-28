@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+   android:background="@drawable/list_selecter"
+    android:orientation="horizontal" >
+
+ <TextView
+            android:id="@+id/textname"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textparent"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textqty"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textsaleprice"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textpurchasesprice"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textmrp"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textminsalePrice"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+   
+</LinearLayout>

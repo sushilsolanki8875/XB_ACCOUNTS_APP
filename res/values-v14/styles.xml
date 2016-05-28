@@ -1,0 +1,24 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+  <style name="MyTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+    <item name="android:actionBarTabTextStyle">@style/MyTheme.ActionBar.TabText</item>
+
+    
+</style>
+
+<style name="MyTheme.ActionBar.TabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+    <!-- This is a PURPLE text color when selected and a WHITE color otherwise -->
+    <item name="android:textColor">@android:color/white</item>
+    
+</style>
+
+<style name="ActionBarTab">
+    <item name="android:background">@color/SpringGreen</item>
+</style>  
+
+</resources>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Name"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtItemName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtItemDes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Description"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtItemDes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtGPName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/GPName"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Spinner
+                    android:id="@+id/spinnerParentGpitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtQTY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Qty"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtQTY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Unit"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Spinner
+                    android:id="@+id/spinnerUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtPrintName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/PrintName"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtPrintName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtSalePrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Sale_price"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtSalePrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtPurchasesPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/PurchasesPrice"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtPurchasesPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtMRP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/MRP"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtMRP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtmin_SalePrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/Min_Sale_price"
+                    android:textSize="@dimen/text_size_small" />
+
+                <EditText
+                    android:id="@+id/edtmin_SalePrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

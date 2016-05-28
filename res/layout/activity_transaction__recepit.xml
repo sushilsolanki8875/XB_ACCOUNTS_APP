@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/voucherName"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:id="@+id/voucherDate"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="@color/White"
+        >
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:paddingTop="5dp"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/edtAc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/Headof"
+            android:textColor="@color/Black"
+             />
+
+        <TextView
+            android:id="@+id/edtLF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:textColor="@color/Black"
+            android:text="@string/Cashook"
+            />
+        
+        <TextView
+            android:id="@+id/edtDebit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:textColor="@color/Black"
+            android:text="@string/Debit"
+            />
+
+        <TextView
+            android:id="@+id/edtCredit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:textColor="@color/Black"
+            android:text="@string/Credit"
+            />
+</LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="5.0">
+
+         <ListView
+             android:id="@+id/listvoucher"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+              >
+         </ListView>
+         
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="@color/White"
+        >
+  </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="5dp" 
+        android:layout_weight="1.0">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            />
+         
+         <TextView
+            android:id="@+id/edtDebitTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/edtCreditTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text=""
+            />
+         
+       </LinearLayout>
+       
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:paddingTop="5dp"
+        android:layout_weight="1.0">
+
+         <Button
+             android:id="@+id/btnsave"
+             android:layout_width="wrap_content"
+             android:onClick="save"
+             style="@style/btnStyleShakespeare"
+             android:layout_height="wrap_content"
+             android:text="@string/Save" />
+         
+         <LinearLayout 
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1.0"></LinearLayout>
+         
+
+         <Button
+             android:id="@+id/btncancal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:onClick="edit"
+             style="@style/btnStyleShakespeare"
+             android:text="@string/Edit" />
+        
+         </LinearLayout>
+</LinearLayout>

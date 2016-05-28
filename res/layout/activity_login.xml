@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    android:layout_gravity="center"
+   tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/llytLogoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/xb" />
+               
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llytlogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llytusernane"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" >
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:hint="user name"
+               
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="textEmailAddress"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llytpassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" >
+
+           <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size_normal"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llytbutton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/checkBoxRemeber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                 android:typeface="sans"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="120dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/btnStyleShakespeare"
+                android:text="Login"
+                android:typeface="monospace"
+                android:textSize="@dimen/text_size_normal" 
+                android:onClick="onclick"/>
+        </LinearLayout>
+    </LinearLayout>
+ 
+</LinearLayout>

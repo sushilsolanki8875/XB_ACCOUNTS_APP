@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_selecter"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:id="@+id/txt_account"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/White" />
+	
+</LinearLayout>

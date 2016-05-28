@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="1.0" >
+        
+        
+      <TextView
+            android:id="@+id/txtAddAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/Add" />
+        
+        <Spinner
+         android:id="@+id/spinnerchooseAdd"
+         android:layout_width="0dp"
+         android:layout_weight="1.0"
+         android:layout_marginLeft="20dp"
+         android:layout_height="wrap_content"
+         android:popupBackground="@color/Wheat"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"></LinearLayout>
+
+       <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_height="wrap_content"
+            android:text="@string/voucher_date" />
+
+        <TextView
+            android:id="@+id/txtdateView"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        
+
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_height="1dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:layout_width="match_parent"
+       android:background="@color/Black"></LinearLayout> 
+    
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5" >   
+    <include layout = "@layout/custom_account_group"
+        android:visibility="gone"
+        android:id="@+id/AcGp" />
+    <include layout = "@layout/custom_items"
+        android:visibility="gone"
+         android:id="@+id/Items"  />
+</LinearLayout>
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+         >
+
+     <Button
+         android:id="@+id/btnSave"
+         style="@style/btnStyleShakespeare"
+         android:layout_width="0dp"
+         android:layout_weight="1.0"
+         android:onClick="save"
+         android:textSize="@dimen/text_size_small"
+         android:layout_marginRight="30dp"
+         android:layout_height="wrap_content"
+         android:text="@string/Save" />
+     
+     <Button
+         android:id="@+id/btnShow"
+         style="@style/btnStyleShakespeare"
+          android:textSize="@dimen/text_size_small"
+         android:layout_width="0dp"
+         android:layout_weight="1.0"
+          android:layout_height="wrap_content"
+          android:onClick="moveMasters"
+         android:text="@string/Show" />
+    
+    </LinearLayout>
+    
+</LinearLayout>

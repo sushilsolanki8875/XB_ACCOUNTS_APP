@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lytcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:paddingBottom="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="20dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnTransaction"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1.0"
+                    android:onClick="onsalePurchases"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/Transaction" />
+
+                <Button
+                    android:id="@+id/btnmasters"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1.0"
+                    android:onClick="onselected"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/masters" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytcontainer2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                 android:paddingBottom="40dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btngl"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1.0"
+                    android:onClick="onGL"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/General_Ledger" />
+
+                <Button
+                    android:id="@+id/btnDailyLedger"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1.0"
+                    android:onClick="ondailyLager"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/Daily_Ledger" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytcontainer3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                 android:paddingBottom="40dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.50" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnInterest"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:onClick="onInterest"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/interest_calculate" />
+
+                <Button
+                    android:id="@+id/btnVoucher"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:onClick="onVoucher"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/Voucher" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.50" >
+                </LinearLayout>
+
+                <!--
+              <Button
+            android:id="@+id/btnsalespur"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Sales/Purchases" 
+            android:layout_marginLeft="50dp"/>
+                -->
+
+            </LinearLayout>
+            
+             <LinearLayout
+                android:id="@+id/lytcontainer4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                 android:paddingBottom="40dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnxyz"
+                    style="@style/btnStyleBeige"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1.0"
+                    android:textSize="@dimen/text_size_normal"
+                    android:onClick=""
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btnsettings"
+                    style="@style/btnStyleShakespeare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1.0"
+                    android:onClick="onsettings"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/Settings" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

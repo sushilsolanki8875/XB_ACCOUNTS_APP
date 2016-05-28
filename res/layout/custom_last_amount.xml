@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/Type"
+            android:textSize="@dimen/text_size_small" />
+
+        <Spinner
+                   android:id="@+id/spinnerType"
+                   android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:spinnerMode="dropdown" />
+
+        <!--
+                <EditText
+                    android:id="@+id/edtrate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:textSize="@dimen/text_size_small"
+                    android:inputType="number" >
+
+                    <requestFocus />
+                </EditText>
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/Amount"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_small" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/Date"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/edtDateOp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="yy-mm-dd"
+            android:textSize="@dimen/text_size_small" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>
